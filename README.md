@@ -7,8 +7,19 @@ MagicMirror² module for displaying Canvas grades, missing assignments, and anno
 From your MagicMirror installation directory, run:
 
 ```bash
-cd ~/MagicMirror/modules
-git clone https://github.com/anthonytapioca-del/MMM-CanvasHub.git
+{
+  "module": "MMM-CanvasHub",
+  "position": "top_left",
+  "config": {
+    "canvasHubUrl": "https://canvaswrapper.vercel.app",
+    "canvasUrl": "https://rowlandhall.instructure.com",
+    "accessToken": "3463~NU8AHNe6DC3zW8RRyrfu6N4w6kBwQJNNcth84mh3LxQEFBBLnW9LBCnaKErnwnWM",
+    "showGrades": true,
+    "showMissing": true,
+    "showAnnouncements": true,
+    "accentColor": "#ffffff"
+  }
+}
 ```
 
 Restart MagicMirror after adding the configuration below.
